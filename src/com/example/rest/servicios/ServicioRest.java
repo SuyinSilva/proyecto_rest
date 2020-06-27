@@ -63,7 +63,7 @@ public class ServicioRest {
 	@PUT
 	@Path("/usuario")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public Response atualiza(Usuario obj) {
+	public Response actualiza(Usuario obj) {
 		log.info("Actualiza usuario " + obj.getId());
 		if (daoUser.actualizaUser(obj) > 0)
 			return Response.ok().build();
@@ -114,7 +114,7 @@ public class ServicioRest {
 	@PUT
 	@Path("/marca")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public Response atualizaMarca(Marca obj) {
+	public Response actualizaMarca(Marca obj) {
 		log.info("Actualiza marca" + obj.getIdMarca());
 		if (daoMarca.actualizaMarca(obj) > 0)
 			return Response.ok().build();
@@ -165,7 +165,7 @@ public class ServicioRest {
 	@PUT
 	@Path("/tiporeclamo")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public Response atualizaTipoReclamo(TipoReclamo obj) {
+	public Response actualizaTipoReclamo(TipoReclamo obj) {
 		log.info("Actualiza tipo reclamo" + obj.getIdtipoReclamo());
 		if (daoTipoReclamo.actualizaTipoReclamo(obj) > 0)
 			return Response.ok().build();

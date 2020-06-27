@@ -14,7 +14,7 @@ import com.example.rest.entidades.Marca;
 import com.example.rest.util.ConectaDB;
 
 public class MarcaModel {
-	private static final Log log = LogFactory.getLog(UsuarioModel.class);
+	private static final Log log = LogFactory.getLog(MarcaModel.class);
 
 	public List<Marca> listarTodos() {
 		Connection conn = null;
